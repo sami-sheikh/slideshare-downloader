@@ -215,9 +215,9 @@ export default function Home() {
               </li>
               <li>
                 <p className="pt-1">
-                  It has the world's largest community like all other social
-                  media platforms and here lots of opportunities for students,
-                  researchers, companies and organizations.
+                  It has the world&lsquo;s largest community like all other
+                  social media platforms and here lots of opportunities for
+                  students, researchers, companies and organizations.
                 </p>
               </li>
             </ul>
@@ -408,9 +408,9 @@ export default function Home() {
                           </svg>
                         </div>
                         <p className="pl-2">
-                          It has the world's largest community like all other
-                          social media platforms and here lots of opportunities
-                          for students, researchers, companies and
+                          It has the world&lsquo;s largest community like all
+                          other social media platforms and here lots of
+                          opportunities for students, researchers, companies and
                           organizations.
                         </p>
                       </div>
