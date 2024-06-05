@@ -3,6 +3,7 @@ import "normalize.css";
 import { AppProvider } from "@/store";
 import { Inter } from "next/font/google";
 import "./css/globals.css";
+import Header from "@/components/common/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,11 +39,19 @@ export const viewport = {
   ],
 };
 
+const navLinks = [
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+  { name: "Services", url: "/services" },
+  { name: "Contact", url: "/contact" },
+];
+
 export default function RootLayout({ children }) {
   return (
     <AppProvider>
       <html lang="en">
         <body className={inter.className}>
+          <Header links={navLinks} />
           {children}
           <Analytics />
         </body>
