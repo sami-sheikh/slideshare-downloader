@@ -10,6 +10,13 @@ const accordionData = [
   { title: "Item 3", content: "Content for item 3" },
 ];
 
+const navLinks = [
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+  { name: "Services", url: "/services" },
+  { name: "Contact", url: "/contact" },
+];
+
 export default function Home() {
   const { state } = useContext(AppContext);
 
@@ -825,17 +832,38 @@ export default function Home() {
         {/* </div> */}
       </section>
       <footer className="footer_wrapper">
-        <div className="footer">
-          <span>&copy; 2024 &#183; SlideShare Downloader</span>
-          <span className={"disclaimer"}>
-            SlideShare Downloader operates under strict adherence to copyright
-            laws. The platform functions as a conduit, retrieving content
-            directly from the Content Delivery Networks (CDNs) of the original
-            sources. It is important to note that SlideShare Downloader does not
-            host or store any copyrighted material on its servers. Furthermore,
-            the platform maintains no affiliation with SlideShare or any other
-            content-sharing platforms.
-          </span>
+        <div className="flex-col footer lg:flex-row">
+          <svg
+            width="76"
+            height="65"
+            viewBox="0 0 76 65"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="logo"
+          >
+            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
+          </svg>
+          <div>
+            <span>&copy; 2024 &#183; SlideShare Downloader</span>
+            <span className={"disclaimer"}>
+              SlideShare Downloader operates under strict adherence to copyright
+              laws. The platform functions as a conduit, retrieving content
+              directly from the Content Delivery Networks (CDNs) of the original
+              sources. It is important to note that SlideShare Downloader does
+              not host or store any copyrighted material on its servers.
+              Furthermore, the platform maintains no affiliation with SlideShare
+              or any other content-sharing platforms.
+            </span>
+          </div>
+          <ul className="nav-list">
+            {navLinks.map((link) => (
+              <li key={link.name} className="nav-item">
+                <a href={link.url} className="nav-link">
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </footer>
     </div>
