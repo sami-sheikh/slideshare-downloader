@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="">
       <AppBar />
-      <main className="main">
+      <main className="max-w-6xl mx-auto main">
         <UrlBox />
         {state.thumbs.length ? <Preview /> : ""}
         {state.selection_mode === true ? (
@@ -25,7 +25,7 @@ export default function Home() {
           ""
         )}
       </main>
-      <section className="max-w-6xl mx-auto px-5 lg:px-0">
+      <section className="max-w-6xl px-5 mx-auto lg:px-0">
         <div className="flex justify-center">
           <div className="">
             <h2 className="flex justify-start py-10 text-3xl text-start">
@@ -223,7 +223,7 @@ export default function Home() {
             </ul>
           </div>
           <div
-            className="lazy-unit av-ads text-center"
+            className="text-center lazy-unit av-ads"
             parent-unit="slidesharedown_in_content_lazy"
             align="center"
             id="div-gpt-5199964"
@@ -232,7 +232,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2">
               <div className="">
                 <div className="bg-emerald-700">
-                  <h3 className="py-5 text-xl font-bold md:text-xl pl-4 text-white">
+                  <h3 className="py-5 pl-4 text-xl font-bold text-white md:text-xl">
                     Pros
                   </h3>
                 </div>
@@ -420,7 +420,7 @@ export default function Home() {
               </div>
               <div className="">
                 <div className="bg-red-600">
-                  <h3 className="py-5 text-xl font-bold md:text-xl pl-4 text-white">
+                  <h3 className="py-5 pl-4 text-xl font-bold text-white md:text-xl">
                     Cons
                   </h3>
                 </div>
@@ -606,7 +606,7 @@ export default function Home() {
             </ul>
           </div>
           <div
-            className="lazy-unit av-ads text-center"
+            className="text-center lazy-unit av-ads"
             parent-unit="slidesharedown_in_content_lazy"
             align="center"
             id="div-gpt-52927776"
@@ -638,7 +638,7 @@ export default function Home() {
                     <path d="M12.5 6.9c1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-.53.12-1.03.3-1.48.54l1.47 1.47c.41-.17.91-.27 1.51-.27zM5.33 4.06L4.06 5.33 7.5 8.77c0 2.08 1.56 3.21 3.91 3.91l3.51 3.51c-.34.48-1.05.91-2.42.91-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c.96-.18 1.82-.55 2.45-1.12l2.22 2.22 1.27-1.27L5.33 4.06z"></path>
                   </svg>
                 </div>
-                <h3 className="py-5 text-xl font-bold md:text-xl text-emerald-600 flex max-sm:justify-center">
+                <h3 className="flex py-5 text-xl font-bold md:text-xl text-emerald-600 max-sm:justify-center">
                   1. Free to Download
                 </h3>
                 <p>
@@ -663,7 +663,7 @@ export default function Home() {
                     <path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path>
                   </svg>
                 </div>
-                <h3 className="py-5 text-xl font-bold md:text-xl text-emerald-600 flex max-sm:justify-center">
+                <h3 className="flex py-5 text-xl font-bold md:text-xl text-emerald-600 max-sm:justify-center">
                   2. Unlimited Downloads
                 </h3>
                 <p>
@@ -686,7 +686,7 @@ export default function Home() {
                     <path d="M866.9 169.9L527.1 54.1C523 52.7 517.5 52 512 52s-11 .7-15.1 2.1L157.1 169.9c-8.3 2.8-15.1 12.4-15.1 21.2v482.4c0 8.8 5.7 20.4 12.6 25.9L499.3 968c3.5 2.7 8 4.1 12.6 4.1s9.2-1.4 12.6-4.1l344.7-268.6c6.9-5.4 12.6-17 12.6-25.9V191.1c.2-8.8-6.6-18.3-14.9-21.2zM810 654.3L512 886.5 214 654.3V226.7l298-101.6 298 101.6v427.6zm-405.8-201c-3-4.1-7.8-6.6-13-6.6H336c-6.5 0-10.3 7.4-6.5 12.7l126.4 174a16.1 16.1 0 0 0 26 0l212.6-292.7c3.8-5.3 0-12.7-6.5-12.7h-55.2c-5.1 0-10 2.5-13 6.6L468.9 542.4l-64.7-89.1z"></path>
                   </svg>
                 </div>
-                <h3 className="py-5 text-xl font-bold md:text-xl text-emerald-600 flex max-sm:justify-center">
+                <h3 className="flex py-5 text-xl font-bold md:text-xl text-emerald-600 max-sm:justify-center">
                   3. Safe &amp; Secure
                 </h3>
                 <p>
@@ -711,7 +711,7 @@ export default function Home() {
                     <path d="M20 3H7c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h6c1.103 0 2-.897 2-2h8c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM9.997 19H4V9h6l-.003 10zm10-2H12V9c0-1.103-.897-2-2-2H7V5h13l-.003 12z"></path>
                   </svg>
                 </div>
-                <h3 className="py-5 text-xl font-bold md:text-xl text-emerald-600 flex max-sm:justify-center">
+                <h3 className="flex py-5 text-xl font-bold md:text-xl text-emerald-600 max-sm:justify-center">
                   4. Compatible for All Devices
                 </h3>
                 <p>
@@ -735,7 +735,7 @@ export default function Home() {
                     <path d="M9 4v3h5v12h3V7h5V4H9zm-6 8h3v7h3v-7h3V9H3v3z"></path>
                   </svg>
                 </div>
-                <h3 className="py-5 text-xl font-bold md:text-xl text-emerald-600 flex max-sm:justify-center">
+                <h3 className="flex py-5 text-xl font-bold md:text-xl text-emerald-600 max-sm:justify-center">
                   5. Different Formats Availability
                 </h3>
                 <p>
@@ -764,7 +764,7 @@ export default function Home() {
                     <path d="M12 12a2 2 0 1 0 2 -2"></path>
                   </svg>
                 </div>
-                <h3 className="py-5 text-xl font-bold md:text-xl text-emerald-600 flex max-sm:justify-center">
+                <h3 className="flex py-5 text-xl font-bold md:text-xl text-emerald-600 max-sm:justify-center">
                   6. Multi Features Tool
                 </h3>
                 <p>
@@ -809,7 +809,7 @@ export default function Home() {
             download, you can ask anytime. We will assist you at any cost.
           </p>
           <div
-            className="lazy-unit av-ads text-center"
+            className="text-center lazy-unit av-ads"
             parent-unit="slidesharedown_in_content_lazy"
             align="center"
             id="div-gpt-55854277"
@@ -818,7 +818,7 @@ export default function Home() {
 
         {/*  */}
 
-        <h2 className="flex justify-center pt-16 text-4xl font-semibold pb-10">
+        <h2 className="flex justify-center pt-16 pb-10 text-4xl font-semibold">
           FAQ
         </h2>
         <Accordion data={accordionData} />
