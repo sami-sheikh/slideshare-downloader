@@ -14,7 +14,7 @@ export default function Home() {
   const { state } = useContext(AppContext);
 
   return (
-    <div className="">
+    <div className="app">
       <AppBar />
       <main className="max-w-6xl mx-auto main">
         <UrlBox />

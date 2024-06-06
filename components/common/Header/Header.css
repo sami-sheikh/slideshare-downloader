@@ -5,7 +5,10 @@
   padding: 20px 40px;
   background-color: #261916;
   border-bottom: 1px solid #ccc;
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  z-index: 99999;
 }
 
 .logo {
@@ -94,4 +97,9 @@
   .mobile-nav-link:hover {
     text-decoration: underline;
   }
+}
+
+.app nav {
+  position: sticky;
+  top: 65px !important;
 }
