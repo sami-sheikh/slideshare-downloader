@@ -6,8 +6,10 @@
   background-color: #261916;
   border-bottom: 1px solid #ccc;
   /* position: relative; */
-  position: sticky;
+  position: fixed !important;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 99999;
 }
 
