@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import "./Header.css";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Header({ links }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,23 +13,25 @@ export default function Header({ links }) {
 
   return (
     <header className="header">
-      <svg
-        width="76"
-        height="65"
-        viewBox="0 0 76 65"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="logo"
-      >
-        <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
-      </svg>
+      <Link href="/">
+        <svg
+          width="76"
+          height="65"
+          viewBox="0 0 76 65"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="logo"
+        >
+          <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
+        </svg>
+      </Link>
       <nav className="nav">
         <ul className="nav-list">
           {links.map((link) => (
             <li key={link.name} className="nav-item">
-              <a href={link.url} className="nav-link">
+              <Link href={link.url} className="nav-link">
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -72,13 +74,13 @@ export default function Header({ links }) {
           <ul className="mobile-nav-list">
             {links.map((link) => (
               <li key={link.name} className="mobile-nav-item">
-                <a
+                <Link
                   href={link.url}
                   className="mobile-nav-link"
                   onClick={toggleMobileMenu}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
