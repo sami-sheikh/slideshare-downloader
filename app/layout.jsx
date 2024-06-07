@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <AppProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={`${inter.className} pt-20`}>
           <Header links={navLinks} />
           {children}
           <Analytics />

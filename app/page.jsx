@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="app">
       <AppBar />
-      <main className="max-w-6xl pt-20 mx-auto main">
+      <main className="max-w-6xl mx-auto main">
         <UrlBox />
         {state.thumbs.length ? <Preview /> : ""}
         {state.selection_mode === true ? (
