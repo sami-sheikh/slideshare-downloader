@@ -184,7 +184,7 @@ export default function Home() {
             characteristics contain slideshare:
           </p>
           <div className="py-10 pl-10">
-            <ul className="pl-1 list-disc md:pl-5 dark:text-gray-400">
+            <ul className="pl-1 text-gray-400 list-disc md:pl-5">
               <li>
                 <p className="pt-1">
                   It has more than fifty millions professional presentations and
@@ -244,7 +244,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="p-3">
-                  <ul className="pl-1 md:pl-5 dark:text-gray-400">
+                  <ul className="pl-1 text-gray-400 md:pl-5">
                     <li>
                       <div className="flex pt-2">
                         <div className="">
@@ -432,7 +432,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="p-3">
-                  <ul className="pl-1 md:pl-5 dark:text-gray-400">
+                  <ul className="pl-1 text-gray-400 md:pl-5">
                     <li>
                       <div className="flex pt-2">
                         <div className="">
@@ -519,7 +519,7 @@ export default function Home() {
             To save slideshare files follow these easy steps:
           </p>
           <div className="pl-10">
-            <ul className="pl-1 list-disc md:pl-5 dark:text-gray-400">
+            <ul className="pl-1 text-gray-400 list-disc md:pl-5">
               <li>
                 <p className="pt-1">Go to your Slideshare account.</p>
               </li>
@@ -586,7 +586,7 @@ export default function Home() {
             favorite slides. Easy-to-follow steps are listed in below:
           </p>
           <div className="pl-10 mb-6">
-            <ul className="pt-5 pl-1 list-disc md:pl-5 dark:text-gray-400">
+            <ul className="pt-5 pl-1 text-gray-400 list-disc md:pl-5">
               <li>
                 <p className="pt-1">First of all, open the slideshare site.</p>
               </li>

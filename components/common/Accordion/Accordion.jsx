@@ -14,11 +14,11 @@ export default function Accordion({ data }) {
   };
 
   return (
-    <div className="divide-y divide-gray-200 border-gray-200 dark:divide-gray-700 dark:border-gray-700 rounded-lg border w-[95%]">
+    <div className="divide-y divide-gray-200 divide-gray-700 border-gray-700 rounded-lg border w-[95%]">
       {data.map((item, index) => (
         <div key={index}>
           <button
-            className="w-full text-left py-4 px-6  focus:outline-none"
+            className="w-full px-6 py-4 text-left focus:outline-none"
             onClick={() => toggleItem(index)}
           >
             <p className="text-white">{item.title}</p>
