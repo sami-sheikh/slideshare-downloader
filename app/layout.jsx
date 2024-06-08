@@ -4,6 +4,7 @@ import { AppProvider } from "@/store";
 import { Inter } from "next/font/google";
 import "./css/globals.css";
 import Header from "@/components/common/Header/Header";
+import Footer from "@/components/common/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
         <body className={`${inter.className} pt-20`}>
           <Header links={navLinks} />
           {children}
+          <Footer />
           <Analytics />
         </body>
       </html>

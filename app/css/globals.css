@@ -52,7 +52,7 @@ body {
 
 .footer_wrapper {
   width: 100%;
-  background: var(--color-surface-container);
+  background: var(--color-surface-container-highest);
   color: var(--color-on-surface);
   font-size: 14px;
   margin-top: 80px;
